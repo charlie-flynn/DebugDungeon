@@ -23,7 +23,7 @@ namespace HelloDungeon
             Console.WriteLine("Please enter your name.");
             characterName = Console.ReadLine();
             Console.WriteLine("Hello, " + characterName);
-
+            Console.ReadKey();
             Console.Clear();
 
             //Display text for the first encounter, and store the players decision
