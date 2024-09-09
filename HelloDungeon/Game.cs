@@ -135,9 +135,8 @@ namespace HelloDungeon
             //Otherwise if the player wants to quit...
             else if (input == 2)
             {
-                //...set game over to be true
-                gameOver = true;
-                return;
+                //...end the program
+                Environment.Exit(0);
             }
         }
 
