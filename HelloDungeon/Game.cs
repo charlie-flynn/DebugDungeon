@@ -9,7 +9,7 @@ namespace HelloDungeon
     {
         string characterName = "";
         int currentArea = 1;
-        bool gameOver = true;
+        bool gameOver = false;
         int health = 20;
         bool playerIsAlive = true;
 
