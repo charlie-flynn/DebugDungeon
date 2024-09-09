@@ -55,7 +55,7 @@ namespace HelloDungeon
             string input = "";
 
             //Loop until the player gets the riddle right or they run out of tries
-            for (int i = 0; i < numberOfAttempts; i--)
+            for (int i = 0; i < numberOfAttempts; i++)
             {
                 Console.Clear();
 
@@ -76,7 +76,7 @@ namespace HelloDungeon
                 Console.WriteLine("What has to be broken before you can use it?");
 
                 //Store the amount of attempts the player has remaining
-                int attemptsRemaining = numberOfAttempts + i;
+                int attemptsRemaining = numberOfAttempts - i;
 
                 //Displays the remaining number of attempts
                 Console.WriteLine("Attempts Remaining: " + attemptsRemaining);
@@ -109,7 +109,6 @@ namespace HelloDungeon
                     Console.WriteLine("You died...");
                     Console.ReadKey();
                     Console.Clear();
-                    break;
                 }
             }
         }
